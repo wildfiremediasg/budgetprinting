@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Printing</title>
+	<meta name="description" content="Budget Printing's Blog Page. Services: Flyer, Namecard, Invoice Bill Book, etc. 
+	FREE DELIVERY. BEST PRICE in SG. QUICK Online Ordering.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+  </head>
+  
+  
+  <body>
+  
+<!-- HEADER -->
+    <header>
+      <div class="logo-and-headercontact">
+			  <a href="index.html" id="logo">
+				<img src="images/homepage/logo.svg" class="logoimg" alt="budget printing logo" >
+			  </a>
+			  
+			  <div class="headercontact">
+				  <p><a class="headeremail" href="mailto:enquiry@budgetprinting.com.sg">enquiry@budgetprinting.com.sg</a></p>
+				  <p class="oh">Operating Hours: 9am-6pm</p>
+			  </div>
+		
+	  
+	 <!-- Mobile Nav  -->
+			<div class="dropdown">
+				<p onclick="myFunction()" class="dropbtn">
+					
+				</p>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="flyer-printing.html">Flyer</a>
+					<a href="namecard-printing.html">Namecard</a>
+					<a href="printing-faq.html">FAQ</a>
+					<a href="printing-clients.html">Clients</a>
+					<a href="printing-templates.html">Templates</a>
+					<a href="blog-printing.html">Blog</a>
+					<a href="contact-printing.php">Contact</a>
+				</div>
+			</div>
+		</div>
+		
+	 <!-- Desktop Nav -->
+	  <nav>
+        <ul class="container">
+          <li><a href="flyer-printing.html">Flyer</a></li>
+		  <li><a href="namecard-printing.html">Namecard</a></li>
+          <li><a href="printing-faq.html">FAQ</a></li>
+          <li><a href="printing-clients.html">Clients</a></li>
+		  <li><a href="printing-templates.html">Templates</a></li>
+		  <li><a href="blog-printing.html" class="selected">Blog</a></li>
+		  <li><a href="contact-printing.php">Contact</a></li>
+        </ul>
+      </nav>
+	  
+	  
+    </header>
+	
+ <!-- SECTION -->
+	
+	<section class="pricingsection content">
+		<div class="pricingsection">
+			<img class="heroimg-mobile" src="images/blog/blog-mobile.jpg" alt="budget printing blog page mobile hero image">
+			<img class="heroimg-desktop" src="images/blog/blog-desktop.jpg" alt="budget printing blog page desktop hero image">
+			<h1 class="pageheading">BLOG</h1>
+			<img class="color-dots" src="images/color dots.svg" alt="budget printing 4 dots design">
+		</div>
+		
+		<!-- <img class="under-contruction" src="images/blog/under-contruction.jpg"> -->
+	</section>
+	
+<!-- FOOTER -->
+	<footer class="footer">
+		<div class="mobile-footer">
+			<p>&copy; 2017 Budget Printing SG.</p>
+			<p>Business Reg No. 53368324J</p>
+		</div>
+		
+		<div class="desktop-footer">
+			<p>&copy; 2017 Budget Printing SG. Business Reg No. 53368324J</p>
+		</div>
+	</footer>
+    
+  </body>
+  <script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown menu if the user clicks outside of it
+		window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+	</script>
+</html>

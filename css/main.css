@@ -1,0 +1,946 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Didact Gothic', sans-serif;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+header {
+	background-color: WHITE;
+	padding: 1px;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	top: 0;
+}
+
+/* Hides desktop nav for mobile view. */
+nav {
+	display: none;
+}
+
+
+footer {
+	background-color: #8C8C8C;
+	font-size: 9px;
+	color: #fff;
+	padding: 10px;
+	height: 60px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* HEADER */
+
+	/* Logo */
+.logoimg {
+	width: 130px;
+	height: 65px;
+	display: block;
+	margin: auto;
+	margin-bottom: 5px;
+}
+
+	/* Contact in header */
+.headercontact p, .headercontact a {
+	font-size: 10px;
+	text-decoration: none;					
+	color: black;
+	font-weight: 500;
+}
+	/* underline header email when hover */
+.headeremail:hover {
+	text-decoration: underline;
+}
+
+	/* Dropdown Button */
+.dropbtn  {
+	background: no-repeat;
+	background-image: url("../images/hamburger button.svg");
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	margin-top: 12px;
+}
+	/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+	margin:0;
+	float: right;
+}
+
+	/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+	font-size: 14px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 101;
+	right:0;
+}
+
+	/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 15px 19px;
+    text-decoration: none;
+    display: block;
+}
+
+	/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f2f2f2}
+
+	/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+	
+	/* change to inline block so that dropdown button can shift to the same row */
+.headercontact {
+	display: inline-block;
+}
+
+	/* COLOR DOTS */
+.color-dots {
+	display: block;
+	margin: auto;
+	width: 40px;
+	height: 4.3px;
+}
+
+	/* PAGE HEADING */
+.pageheading {
+	font-family: 'Roboto', sans-serif; 
+	text-align: center;
+	margin-bottom: 5px;
+}	
+
+	/* HERO IMAGE */
+	/* hides hero image desktop version */
+.heroimg-desktop {
+	display: none;
+	max-height: auto;
+	margin: auto;
+}
+	/* so that fixed header don't overlay content */
+.content {
+	margin-top: 122px;
+}
+
+/* FOOTER */
+footer p {
+	text-align: center;
+	margin-top: 5px;
+}
+
+/* hide desktop footer when in mobile view */
+.desktop-footer {
+	display:none;
+}
+
+	/* Sticky Footer */
+.content {
+	 min-height: calc(100vh);
+	 padding-bottom: 40px;
+}    
+
+
+/* ================================= 
+			HOMEPAGE
+==================================== */
+	/* full screen image for homepage */
+.homepagesection {
+	background-image: url("../images/homepage/homepage-mobile.jpg");
+	background-size: cover;
+	background-position: center;
+	padding-top: 1px;
+}
+	
+.homepageheading a {
+	color: white;
+	font-family: 'Roboto', sans-serif; 
+	text-align: center;
+}
+	/* shifts "Our Services" heading down. */
+.homepageheading {
+	padding-top: 7em;
+}
+
+/* our services */
+.homepageheading h1 {
+	font-size: 2.4em;
+	text-shadow: 3px 3px 4px black;
+	margin-bottom: 0px;
+}
+
+/* click here */
+.homepageheading h4 {
+	margin-top: -1em;
+	text-decoration: underline;
+	text-shadow: 1px 1px 2px black;
+	font-size: 0.6em;
+	padding-bottom: 20px;
+}
+
+	/* Content */
+.content-background {
+	/* background-color: rgba(0,0,0,.64); */
+	background-color: white;
+	height: 240px;
+	padding-top: 0.5px;
+	margin: auto;
+}   
+
+.services {
+	font-size: 14.5px;
+	font-weight: 500;
+	color: black;
+	text-align: center;
+	vertical-align: center;
+	margin-top: 45px;
+	line-height: 1.3;
+}
+	
+.description {
+	font-size: 8.7px;
+	color: black;
+	font-weight: 500;
+	margin-top: 23px;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.comadvantages h2 {
+	font-size: 13.5px;
+	text-align: center;
+	text-shadow: 1px 1px 0.5px black;
+}
+
+.freedelivery {
+	margin-top: 40px;
+	color: #50ACEC;
+}
+
+.bestprice {
+	margin-top: 21px;
+	color: #FFEC00;
+}
+
+.quickordering {
+	margin-top: 21px;
+	color: #FA6098;
+}
+
+/* ================================= 
+			CLIENTS
+==================================== */
+.logos-desktop {
+	display: none;
+}
+
+.logos-desktop1200 {
+	display: none;
+}
+
+/* ================================= 
+			FAQ
+==================================== */
+
+
+.accordion-wrap {
+	width: 95%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #F2F2F2;
+    color: #EF2C73;
+	font-weight: 500;
+    cursor: pointer;
+	margin: 0;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+	border: none;
+    /* border-bottom: 0.5px solid #50ACEC; */
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #E5E5E5;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+/* Styling button */
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 8px;
+    color: #EF2C73;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* ================================= 
+  CONTACT
+==================================== */
+.icon {
+	background-repeat: no-repeat;
+	background-size: 12px;
+
+	padding-left: 25px; /* Or size of icon + spacing */ 
+	font-size: 12px;
+	margin: auto;
+}
+	
+.icon a {
+	color: black;
+}
+	
+.contact-details {
+  clear: both;
+  margin: 0 auto;
+  width: 300px;
+  border: 1px solid #fff;
+  margin-top: 40px;
+}
+
+.contact-details h3 {
+
+}
+
+	/* hiding extra text used to align email, OH & address. */
+.hidespan {
+	visibility: hidden;
+}
+
+	/* underline email when hover. */
+.email-icon:hover {
+	text-decoration: underline;
+}
+
+.email-icon {
+	background-image: url(../images/contact/icons/email.svg);
+}
+
+.clock-icon {
+	background-image: url(../images/contact/icons/oh.svg);
+}
+
+.address-icon {
+	background-image: url(../images/contact/icons/address.svg);
+}
+
+/* FORM */
+form {
+  max-width: 300px;
+  margin: auto;
+  margin-top: 60px;
+  padding: 10px 20px;
+  background: #F2F2F2;
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid #50ACEC;
+  font-size: 14px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+.contact-form-button {
+  padding: 16px 24px;
+  color: white;
+  /* background-color: #e8eeef; */
+  background-color: #337ab7;
+  background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);
+  font-size: 18px;
+  text-align: center;
+  font-family: Arial;
+  font-weight: 400;
+  border-radius: 5px;
+  width: 160px;
+  border: 0.1px solid #204d74;
+  border-width: 1px 1px 3px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-form-button:hover {
+	background-color: #265a88;
+	cursor: pointer;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #EF2C73;
+  font-weight: 600;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+/* ================================= 
+  TEMPLATES
+==================================== */
+button.templates-accordion {
+	text-align: center;
+}
+
+.template-panel {
+	text-align: center;
+	width: 100%;
+}
+
+.download-title {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.download-links {
+	margin-bottom: 40px;
+	text-decoration: underline;
+}
+
+.aipsd-links {
+	padding-right: 0;
+}
+
+.aipsd-links:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+	
+.pp-links {
+	padding-right: 18px;
+}
+
+.pp-links:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width:320px) {  
+/* smartphones, iPhone, portrait 480x320 phones */ 
+
+	/* ================================= 
+			HOMEPAGE
+     ==================================== */
+	.services {
+		font-size: 13.5px;
+	}
+
+	.description {
+		font-size: 7.7px;
+	}
+
+	footer {
+		height: 50px;
+		font-size: 11px;
+	}
+	
+	footer p {
+		margin-top: 7.5px;
+	}
+	
+	/* show desktop footer*/
+	.desktop-footer {
+		display: block;
+	}
+	
+	/* hide mobile footer when in desktop view */
+	.mobile-footer {
+		display:none;
+	}
+	
+	.headercontact {
+		margin-left: 10px;
+	}
+	
+	.dropbtn {
+		margin-right: 10px;
+	}
+	
+	.homepageheading h1 {
+		font-size: 2.8em;
+	}
+}
+
+	/* hides mobile hero image & display desktop version */
+@media (min-width:400px) {
+	.heroimg-mobile {
+		display: none;
+	}
+	
+	.heroimg-desktop {
+		display: block;
+	}
+	
+	
+	.homepageheading h1 {
+		font-size: 3em;
+	}
+	
+	/* ================================= 
+			CONTACT
+     ==================================== */
+	.icon {
+		background-size: 15px;
+		font-size: 15px;
+		padding-left: 35px;
+		background-position: left center;
+	}
+	
+	.contact-details {
+		margin-top: 60px;
+	}
+	
+	  form {
+		max-width: 480px;
+	}
+}
+
+@media (min-width:481px) { 
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+
+	/* ================================= 
+			HOMEPAGE
+     ==================================== */
+	.homepageheading h1 {
+		font-size: 3.2em;
+	}
+	
+	.homepageheading h4 {
+		margin-top: -2.2em;
+	}
+	
+	/* ================================= 
+			CONTACT
+     ==================================== */
+	.icon {
+		background-size: 17px;
+		font-size: 17px;
+		padding-left: 40px;
+	}
+	
+	/* ================================= 
+			TEMPLATES
+     ==================================== */	
+	.download-title-and-links-container {
+		display: flex;
+		justify-content: space-between;
+		height: 60px;
+	}	
+	
+	.download-links {
+		margin-top: 16px;
+	}
+
+}
+@media (min-width:641px) { 
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+
+	/* ================================= 
+			HOMEPAGE
+     ==================================== */
+	.headercontact {
+		margin-left: 13px;
+	}
+	
+	.dropbtn {
+		margin-right: 13px;
+	}
+	
+	/* full screen image desktop version of homepage */
+	.homepagesection {
+		background-image: url("../images/homepage/homepage-desktop.jpg");
+		background-size: cover;
+		background-position: center;
+		height: auto;
+	}
+
+	.pageheading {
+		font-size: 35px;
+	}
+	
+	.homepageheading h1 {
+		font-size: 3.3em;
+	}
+	
+	.homepageheading h4 {
+		font-size: 0.7em;
+	}
+	
+	/* ================================= 
+				CLIENTS
+	==================================== */
+	.logos-mobile {
+		display: none;
+	}
+	
+	.logos-desktop {
+		display: block;
+		width: 95%;
+		margin: auto;
+	}
+
+	/* ================================= 
+			CONTACT
+	==================================== */	
+	.icon {
+		background-size: 20px;
+		font-size: 20px;
+	}
+
+}
+
+@media (min-width:800px) { 
+
+	/* ================================= 
+			HOMEPAGE
+     ==================================== */
+	.content {
+		min-height: calc(100vh);
+	} 
+	
+	.pageheading {
+		font-size: 40px;
+	}
+	
+	.homepageheading h1 {
+		font-size: 3.5em;
+	}
+
+	/* ================================= 
+				FAQ
+	==================================== */
+	
+	.accordion-wrap {
+	width: 80%;
+	margin: auto;
+	margin-top: 30px;
+	}
+
+}
+
+
+@media (min-width:961px) { 
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+	/* increase space between logo and nav */
+	
+	/* ================================= 
+			BASE LAYOUT
+     ==================================== */
+	 
+	 /* shift contact and OH to top right corner */
+	.headercontact {
+		position: absolute;
+		top: 18px;
+		right: 0;
+	}
+
+	/* Hides hamburger menu for desktop view */
+	.dropbtn {
+		display: none;
+	}
+	/* Show desktop nav*/
+	nav {
+		display: block;
+		font-size: 13px;
+		margin-top: 6.5px;
+		margin-bottom: 6.5px;
+	}
+	
+	/* font color of nav */
+	nav a {
+		color: black;
+		font-weight: 500;
+	}
+	
+	nav a:hover {
+		color: #FA6098;
+		/* font-size: 17px; */
+	}
+  
+	
+		/* css flexing to make nav menu */
+	.container {
+		display: flex;
+		width: 	78%;
+		padding-left: 0;
+		margin: auto;
+		margin-bottom: 1px;
+		margin-top: 5px;
+		justify-content: space-between;
+	}
+	
+	/* ================================= 
+			HOMEPAGE
+     ==================================== */
+	.homepageheading h1 {
+		font-size: 3.6em;
+	}
+	
+	.homepageheading h4 {
+		margin-top: -3em;
+	}
+	
+	/* add bottom border and change styling of nav link when at that page */
+	.selected {
+	color: #50ACEC;
+	font-weight: bold;
+	border: solid 1.5px #FA6098;
+	padding: 3px 20px;
+	}
+	
+	/* align contact and OH to desktop nav menu */
+	.logo-and-headercontact {
+		width:78%;
+		position: relative;
+		margin: auto;
+	}
+	
+	.headercontact p {
+		margin:0;
+		margin-bottom: 3px;
+	}
+	
+	/* Operating hours */
+	.oh {
+		text-align: right;
+	}
+	
+	/* so that fixed header don't overlay content */
+	.content {
+	margin-top: 94px;
+	}
+	
+	/* increase size of content box */
+	.content-background {
+		height: 310px;
+		padding-top: 5px;
+	}  
+
+	/* css flexing to list advantages horizontally */
+	.comadvantages {
+		margin: auto;
+		margin-top: 60px;
+		width: 70%;
+		text-align: center;
+	}
+	
+	.comadvantages h2 {
+	font-size: 16px;
+	}
+	
+	.services {
+		font-size: 18.5px;
+		margin-top: 35px;
+		font-weight: 500;
+	}
+	
+	.description {
+		margin-top: 35px;
+		font-size: 10.5px;
+		font-weight: 500;
+	}
+	
+	.freedelivery {
+		margin-top: 21px;
+	}
+}
+
+
+@media (min-width:1025px) { 
+/* big landscape tablets, laptops, and desktops */
+ 
+	/* ================================= 
+			HOMEPAGE
+     ==================================== */
+	.homepageheading h1 {
+	font-size: 3.7em; 
+	}
+	
+	.homepageheading h4 {
+		margin-top: -3.3em;
+	}
+	
+	/* ================================= 
+			CONTACT
+	==================================== */
+	.icon {
+		margin: initial;
+	}
+	
+	.contact-details {
+		float: left;
+		width: 62%;
+	}
+	
+	form {
+		float: right;
+		width: 38%;
+	}
+	
+	.contact-details-and-form {
+		width: 78%;
+		margin: auto;
+	}
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	
+	/* ================================= 
+			TEMPLATES
+	==================================== */
+	/* break into 2 columns */
+	.templates-accordion-wrap{
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	button.accordion.templates-accordion  {
+		text-align: left;
+		text-decoration: none;
+	}
+	
+	.desktop-column1,
+	.desktop-column2 {
+		width: 49%;
+	}
+	
+	.pp-links {
+		padding-right: 15px;
+	}
+}
+
+@media (min-width:1085px) {
+	
+	/* ================================= 
+			CONTACT
+     ==================================== */
+	.pp-links {
+		padding-right: 20px;
+	}
+	
+	.contact-details {
+		float: left;
+		width: 60%;
+	}
+	
+		form {
+		width: 40%;
+	}
+}
+
+@media (min-width:1200px) { 
+/* hi-res laptops and desktops */
+
+	/* ================================= 
+			HOMEPAGE
+     ==================================== */
+	.homepageheading h1 {
+		font-size: 4em;
+	}
+	
+	.homepageheading h4 {
+		margin-top: -3.6em;
+	}
+	
+	/* ================================= 
+				FAQ
+	==================================== */	
+	/* Style the questions */
+	button.accordion {
+		text-align: center;
+	}
+
+	/* Style the answers accordion panel. Note: hidden by default */
+	div.panel {
+		text-align: center;
+	}
+	
+	/* ================================= 
+			CLIENTS
+	==================================== */
+	.logos-desktop {
+		display: none;
+	}
+	
+	.logos-desktop1200 {
+		display: block;
+	}
+	
+}
